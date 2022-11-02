@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-    color:rgb(145, 82, 92);
+  color: rgb(145, 82, 92);
 }
 
 /* Header */
@@ -41,7 +41,6 @@ nav {
 .navigation {
   display: grid;
   grid-template: 1fr / repeat(3, 1fr);
-  
 }
 
 .navigation h2 {
@@ -51,25 +50,33 @@ nav {
   font-weight: normal;
 }
 
+@media only screen and (max-width: 550px) {
+  nav {
+    height: 9rem;
+  }
 
-
-@media only screen and (max-width:550px) {
-    
-    nav {
-        height: 9rem;
-    }
-
-    .navigation {
-        grid-template: repeat(3,1fr) / 1fr;
-    }
-    .navigation h2 {
-        padding: 0.5rem 1rem 0.5rem 0;
-    }
+  .navigation {
+    grid-template: repeat(3, 1fr) / 1fr;
+  }
+  .navigation h2 {
+    padding: 0.5rem 1rem 0.5rem 0;
+  }
 }
 
 /* Hero Section */
 
 .hero {
-    background-image: url(./resources/banner.jpg);
-    heigh
+  background-image: url(./resources/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 40rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .hero {
+  
+    background-position: center;
+    background-size: auto 100%;
+  }
 }
