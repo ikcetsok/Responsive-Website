@@ -1,0 +1,63 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* General */
+
+a {
+  text-decoration: none;
+  color: rgb(53, 58, 79);
+}
+
+/* Header */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 5rem;
+  width: 100%;
+  background-color: beige;
+  z-index: 5;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 1rem;
+  align-self: center;
+}
+
+.navigation {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+  
+}
+
+.navigation h2 {
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+
+@media only screen and (max-width:550px) {
+    
+    nav {
+        height: 9rem;
+    }
+
+    .navigation {
+        grid-template: repeat(3,1fr) / 1fr;
+    }
+    .navigation h2 {
+        padding: 0.5rem 1rem 0.5rem 0;
+    }
+}
