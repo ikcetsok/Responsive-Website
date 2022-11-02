@@ -14,6 +14,10 @@ a {
   color: rgb(53, 58, 79);
 }
 
+a:hover {
+    color:rgb(145, 82, 92);
+}
+
 /* Header */
 
 nav {
@@ -48,6 +52,7 @@ nav {
 }
 
 
+
 @media only screen and (max-width:550px) {
     
     nav {
@@ -60,4 +65,11 @@ nav {
     .navigation h2 {
         padding: 0.5rem 1rem 0.5rem 0;
     }
+}
+
+/* Hero Section */
+
+.hero {
+    background-image: url(./resources/banner.jpg);
+    heigh
 }
